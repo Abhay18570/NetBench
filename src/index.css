@@ -757,14 +757,14 @@ tbody tr:hover {
   display:flex;
   align-items:center;
   gap:5px;
-  color:#929dad;
+  color:var(--green);
   font-size:9px;
   margin-left:auto;
   white-space:nowrap;
 }
 
 .connection-status .dot {
-  color:#566173;
+  color:var(--green);
   width:5px;
   height:5px;
 }
