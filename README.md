@@ -2,7 +2,8 @@
 
 React + Vite + TypeScript dashboard backed by Flask and real Python TCP/UDP
 socket tests. No mock fallback. OpenTelemetry metrics reach a Dockerized
-Collector with debug output and Prometheus storage; frontend status cards remain placeholders.
+Collector with debug output, Prometheus storage, and a provisioned Grafana dashboard.
+Frontend observability status cards remain placeholders; API Online checks Flask only.
 
 ## Local development
 
@@ -14,31 +15,41 @@ source .venv/bin/activate
 pip install -r backend/requirements.txt
 ```
 
-Run these four terminals **from the project root**. Network servers are
+With Docker Desktop running, use these five terminals **from the project root**,
+in this order. Network servers are
 independent services; Flask never starts a server per HTTP request.
 
-Terminal 1 — TCP:
+Terminal 1 — observability:
+
+```sh
+docker compose config --quiet
+docker compose up -d
+docker compose ps
+```
+
+Terminal 2 — TCP:
 
 ```sh
 source .venv/bin/activate
 python -m backend.network.tcp_server --host 127.0.0.1
 ```
 
-Terminal 2 — UDP:
+Terminal 3 — UDP:
 
 ```sh
 source .venv/bin/activate
 python -m backend.network.udp_server --host 127.0.0.1
 ```
 
-Terminal 3 — Flask:
+Terminal 4 — Flask:
 
 ```sh
 source .venv/bin/activate
+export OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://127.0.0.1:4318/v1/metrics
 python -m backend.app
 ```
 
-Terminal 4 — React:
+Terminal 5 — React:
 
 ```sh
 npm run dev
@@ -62,6 +73,42 @@ server CORS. A production build needs a same-origin reverse proxy for `/api` or
 that explicit override; the Vite development proxy is not a production server.
 The upstream uses IPv4 `127.0.0.1` because `localhost:5000` may reach macOS AirPlay.
 
+## Access and shutdown
+
+| Service | Local URL |
+|---|---|
+| NetBench React | Actual URL printed by `npm run dev`; port may change |
+| Flask health | http://127.0.0.1:5000/api/health |
+| Proxied health | `/api/health` on the actual Vite URL |
+| Prometheus | http://127.0.0.1:9090 |
+| Grafana | http://127.0.0.1:3000 |
+| Provisioned dashboard | http://127.0.0.1:3000/d/netbench-overview |
+
+Stop React, Flask, TCP, and UDP using **Ctrl+C in each native terminal**.
+Stop observability with `docker compose stop`; `docker compose up -d` starts it
+again. Both retain named volumes. **`docker compose down -v` deletes persistent
+Prometheus and Grafana volumes: use it only if you intend to erase that data.**
+
+## Demo checklist
+
+1. Run the five-terminal startup sequence; show `docker compose ps`.
+2. Open the actual Vite URL and verify **API Online**.
+3. Select host `127.0.0.1`, Compare, and 1 MB; run the test.
+4. Explain throughput, application RTT, and transfer duration. TCP loss is N/A;
+   UDP loss is observed missing DATA sequences, with no artificial loss.
+5. Run Compare at 10 MB. Explain loopback scope and UDP's 150 ms collection window.
+6. Open Prometheus and query `netbench_network_tests_total{job="netbench"}`.
+7. Allow about 40 seconds for SDK export, batching, scraping, and dashboard refresh.
+8. Open Grafana (local defaults `admin` / `netbench-local`) and show all twelve
+   panels. Explain SDK → Collector → Prometheus → Grafana and the debug exporter.
+9. Explain that React shows individual results, Grafana shows aggregates/history,
+   and React's observability cards are still placeholders.
+
+Phase 10 validation and complete real loopback measurements are recorded in
+[the final integration report](docs/phase10-loopback-results.md), with
+[unrounded API evidence](docs/phase10-results.json). Two-device LAN validation
+remains Phase 11; application services run natively.
+
 ## API
 
 - `GET /api/health`: Flask availability only, not TCP/UDP server health.
@@ -84,15 +131,20 @@ API serializes test requests with a lock; this is not a distributed job system.
 ## Measurement interpretation
 
 - 1 MB means 1,048,576 bytes. API values are unrounded; the UI formats them.
-- TCP packet counts and IP packet loss are **N/A**, not zero.
+- TCP packet counts and IP packet loss are **N/A**, not zero. Application-level
+  TCP sockets do not directly expose underlying IP packet-loss events here. TCP
+  provides reliability, but NetBench does not instrument kernel retransmissions.
 - UDP loss comes from missing unique DATA sequence numbers; no artificial loss
   or DATA retransmission is used. Duplicate packets are not double-counted.
 - UDP throughput is received-payload goodput. Its elapsed time includes the
   150 ms reorder window and END/RESULT control exchanges/retries. TCP elapsed
   time includes its final ACK. These timing differences affect comparisons.
 - Application RTT includes peer processing; it is not ICMP ping latency.
-- Localhost measures the local machine's loopback path, not internet/Wi-Fi
-  performance. UDP loss can be zero or nonzero due to local buffer pressure.
+- Phase 10 uses **127.0.0.1: all traffic stays on the same Mac**. Results measure
+  loopback/application performance, **not Internet speed, Wi-Fi throughput, or
+  Ethernet throughput**. TCP throughput can appear extremely high. UDP loss
+  can be zero or nonzero due to local buffer pressure. Two-device LAN testing
+  remains unperformed (Phase 11).
 - Start is disabled during a request. API health refreshes every 15 seconds.
   The browser request timeout is 180 seconds; if it expires or you leave the
   page, an in-progress server-side test may continue until it ends/times out.
@@ -103,7 +155,7 @@ More UDP protocol details: [backend/network/UDP.md](backend/network/UDP.md).
 
 ```sh
 source .venv/bin/activate
-python -m compileall -q backend/app.py backend/network backend/metrics backend/tests
+python -m compileall -q backend
 python -m unittest discover -s backend/tests -v
 npm run build
 npm run lint
@@ -177,7 +229,7 @@ network access. Existing live UDP tests still require localhost socket access.
 ## OpenTelemetry Collector (Phase 7)
 
 Phase 7 introduced the Collector in Docker; Phase 8 adds Prometheus. Flask, React, and TCP/UDP services continue
-running natively with the four-terminal startup sequence above. Docker Desktop
+running natively with the five-terminal startup sequence above. Docker Desktop
 must be running; no application containerization is required.
 
 Image: `otel/opentelemetry-collector-contrib:0.161.0`, pinned to the official
@@ -409,15 +461,20 @@ Collector `0.161.0` and Prometheus `v3.15.0` are unchanged.
 
 ```mermaid
 flowchart LR
-    UI[Native React] --> API[Native Flask]
+    subgraph Application[Native application components]
+    UI[React / Vite] --> Proxy[Vite /api proxy]
+    Proxy -->|127.0.0.1:5000| API[Flask]
     API --> Engines[Native TCP / UDP tests]
     Engines --> API
     API --> SDK[OpenTelemetry SDK]
+    end
     SDK -->|OTLP HTTP :4318| Collector[Collector]
+    subgraph Observability[Docker observability components]
     Collector --> Debug[Debug exporter]
     Collector --> Exposition[Prometheus exporter :8889]
     Exposition -->|scrape every 5s| Prometheus[Prometheus :9090]
     Prometheus -->|PromQL| Grafana[Grafana :3000]
+    end
 ```
 
 ### Start and log in

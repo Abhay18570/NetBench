@@ -1,0 +1,3250 @@
+{
+  "captured_at": "2026-10-07T04:23:30.578344+00:00",
+  "environment": {
+    "os": "macOS 26.5 (25F71), arm64",
+    "python": "3.14.7",
+    "node": "26.8.1",
+    "npm": "11.19.0",
+    "docker": "29.7.2 (a7dcaa6)",
+    "docker_compose": "v5.4.0",
+    "collector": "0.161.0",
+    "prometheus": "v3.15.0",
+    "grafana": "13.2.3",
+    "otel_sdk": "1.45.0",
+    "flask": "3.1.3",
+    "vite": "8.3.3",
+    "browser": "Chromium 153.0.8010.12 (Playwright v1243)"
+  },
+  "matrix": {
+    "browser": "Chromium",
+    "origin": "http://localhost:5173",
+    "records": [
+      {
+        "timestamp": "2026-10-07T04:15:40.244Z",
+        "size_mb": 1,
+        "mode": "TCP",
+        "status": 200,
+        "response": {
+          "application_rtt_ms": 0.10016599998152742,
+          "bytes_transferred": 1048576,
+          "host": "127.0.0.1",
+          "packet_loss_percent": null,
+          "port": 5001,
+          "protocol": "TCP",
+          "test_size_mb": 1,
+          "throughput_mbps": 23652.13468684752,
+          "transfer_time_seconds": 0.0003546659999642543
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:40.524Z",
+        "size_mb": 1,
+        "mode": "UDP",
+        "status": 200,
+        "response": {
+          "application_rtt_ms": 0.516624999988835,
+          "bytes_received": 1048576,
+          "bytes_sent": 1048576,
+          "host": "127.0.0.1",
+          "packet_loss_percent": 0,
+          "packets_lost": 0,
+          "packets_received": 874,
+          "packets_sent": 874,
+          "port": 5002,
+          "protocol": "UDP",
+          "server": "127.0.0.1:5002",
+          "test_size_mb": 1,
+          "throughput_mbps": 48.48314331559473,
+          "transfer_time_seconds": 0.17302112499999112
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:40.809Z",
+        "size_mb": 1,
+        "mode": "COMPARE",
+        "status": 200,
+        "response": {
+          "tcp": {
+            "application_rtt_ms": 0.1420000000393884,
+            "bytes_transferred": 1048576,
+            "host": "127.0.0.1",
+            "packet_loss_percent": null,
+            "port": 5001,
+            "protocol": "TCP",
+            "test_size_mb": 1,
+            "throughput_mbps": 20766.04003424536,
+            "transfer_time_seconds": 0.00040395799999259907
+          },
+          "udp": {
+            "application_rtt_ms": 0.21974999998519706,
+            "bytes_received": 1048576,
+            "bytes_sent": 1048576,
+            "host": "127.0.0.1",
+            "packet_loss_percent": 0,
+            "packets_lost": 0,
+            "packets_received": 874,
+            "packets_sent": 874,
+            "port": 5002,
+            "protocol": "UDP",
+            "server": "127.0.0.1:5002",
+            "test_size_mb": 1,
+            "throughput_mbps": 48.522697666683904,
+            "transfer_time_seconds": 0.17288008299999547
+          }
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:40.923Z",
+        "size_mb": 5,
+        "mode": "TCP",
+        "status": 200,
+        "response": {
+          "application_rtt_ms": 0.10620800003380282,
+          "bytes_transferred": 5242880,
+          "host": "127.0.0.1",
+          "packet_loss_percent": null,
+          "port": 5001,
+          "protocol": "TCP",
+          "test_size_mb": 5,
+          "throughput_mbps": 38731.57290227989,
+          "transfer_time_seconds": 0.001082915999973011
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:41.203Z",
+        "size_mb": 5,
+        "mode": "UDP",
+        "status": 200,
+        "response": {
+          "application_rtt_ms": 0.13429099999484606,
+          "bytes_received": 5242880,
+          "bytes_sent": 5242880,
+          "host": "127.0.0.1",
+          "packet_loss_percent": 0,
+          "packets_lost": 0,
+          "packets_received": 4370,
+          "packets_sent": 4370,
+          "port": 5002,
+          "protocol": "UDP",
+          "server": "127.0.0.1:5002",
+          "test_size_mb": 5,
+          "throughput_mbps": 223.44401951661519,
+          "transfer_time_seconds": 0.18771162500001992
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:41.490Z",
+        "size_mb": 5,
+        "mode": "COMPARE",
+        "status": 200,
+        "response": {
+          "tcp": {
+            "application_rtt_ms": 0.09274999996478073,
+            "bytes_transferred": 5242880,
+            "host": "127.0.0.1",
+            "packet_loss_percent": null,
+            "port": 5001,
+            "protocol": "TCP",
+            "test_size_mb": 5,
+            "throughput_mbps": 42258.20166779035,
+            "transfer_time_seconds": 0.0009925420000058693
+          },
+          "udp": {
+            "application_rtt_ms": 0.19937499996558472,
+            "bytes_received": 5242880,
+            "bytes_sent": 5242880,
+            "host": "127.0.0.1",
+            "packet_loss_percent": 0,
+            "packets_lost": 0,
+            "packets_received": 4370,
+            "packets_sent": 4370,
+            "port": 5002,
+            "protocol": "UDP",
+            "server": "127.0.0.1:5002",
+            "test_size_mb": 5,
+            "throughput_mbps": 222.8851100491091,
+            "transfer_time_seconds": 0.1881823329999861
+          }
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:41.603Z",
+        "size_mb": 10,
+        "mode": "TCP",
+        "status": 200,
+        "response": {
+          "application_rtt_ms": 0.07941699999491902,
+          "bytes_transferred": 10485760,
+          "host": "127.0.0.1",
+          "packet_loss_percent": null,
+          "port": 5001,
+          "protocol": "TCP",
+          "test_size_mb": 10,
+          "throughput_mbps": 42464.11718185398,
+          "transfer_time_seconds": 0.0019754580000039823
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:41.902Z",
+        "size_mb": 10,
+        "mode": "UDP",
+        "status": 200,
+        "response": {
+          "application_rtt_ms": 0.14220799999975497,
+          "bytes_received": 9574960,
+          "bytes_sent": 10485760,
+          "host": "127.0.0.1",
+          "packet_loss_percent": 8.685204256779953,
+          "packets_lost": 759,
+          "packets_received": 7980,
+          "packets_sent": 8739,
+          "port": 5002,
+          "protocol": "UDP",
+          "server": "127.0.0.1:5002",
+          "test_size_mb": 10,
+          "throughput_mbps": 376.28808653727367,
+          "transfer_time_seconds": 0.20356658299999708
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:42.203Z",
+        "size_mb": 10,
+        "mode": "COMPARE",
+        "status": 200,
+        "response": {
+          "tcp": {
+            "application_rtt_ms": 0.12091600001440383,
+            "bytes_transferred": 10485760,
+            "host": "127.0.0.1",
+            "packet_loss_percent": null,
+            "port": 5001,
+            "protocol": "TCP",
+            "test_size_mb": 10,
+            "throughput_mbps": 34337.913300742555,
+            "transfer_time_seconds": 0.0024429579999605266
+          },
+          "udp": {
+            "application_rtt_ms": 0.22737500000857835,
+            "bytes_received": 9501760,
+            "bytes_sent": 10485760,
+            "host": "127.0.0.1",
+            "packet_loss_percent": 9.383224625243162,
+            "packets_lost": 820,
+            "packets_received": 7919,
+            "packets_sent": 8739,
+            "port": 5002,
+            "protocol": "UDP",
+            "server": "127.0.0.1:5002",
+            "test_size_mb": 10,
+            "throughput_mbps": 376.6728112425203,
+            "transfer_time_seconds": 0.20180400000003829
+          }
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:42.322Z",
+        "size_mb": 25,
+        "mode": "TCP",
+        "status": 200,
+        "response": {
+          "application_rtt_ms": 0.0921670000479935,
+          "bytes_transferred": 26214400,
+          "host": "127.0.0.1",
+          "packet_loss_percent": null,
+          "port": 5001,
+          "protocol": "TCP",
+          "test_size_mb": 25,
+          "throughput_mbps": 40900.757808663875,
+          "transfer_time_seconds": 0.0051274159999934454
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:42.654Z",
+        "size_mb": 25,
+        "mode": "UDP",
+        "status": 200,
+        "response": {
+          "application_rtt_ms": 0.1021250000121654,
+          "bytes_received": 24506800,
+          "bytes_sent": 26214400,
+          "host": "127.0.0.1",
+          "packet_loss_percent": 6.5137782660441275,
+          "packets_lost": 1423,
+          "packets_received": 20423,
+          "packets_sent": 21846,
+          "port": 5002,
+          "protocol": "UDP",
+          "server": "127.0.0.1:5002",
+          "test_size_mb": 25,
+          "throughput_mbps": 817.0516370881691,
+          "transfer_time_seconds": 0.23995349999995597
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:42.993Z",
+        "size_mb": 25,
+        "mode": "COMPARE",
+        "status": 200,
+        "response": {
+          "tcp": {
+            "application_rtt_ms": 0.10545800000727468,
+            "bytes_transferred": 26214400,
+            "host": "127.0.0.1",
+            "packet_loss_percent": null,
+            "port": 5001,
+            "protocol": "TCP",
+            "test_size_mb": 25,
+            "throughput_mbps": 39216.204000561855,
+            "transfer_time_seconds": 0.005347667000023648
+          },
+          "udp": {
+            "application_rtt_ms": 0.1891250000198852,
+            "bytes_received": 24815200,
+            "bytes_sent": 26214400,
+            "host": "127.0.0.1",
+            "packet_loss_percent": 5.337361530715005,
+            "packets_lost": 1166,
+            "packets_received": 20680,
+            "packets_sent": 21846,
+            "port": 5002,
+            "protocol": "UDP",
+            "server": "127.0.0.1:5002",
+            "test_size_mb": 25,
+            "throughput_mbps": 828.884347486632,
+            "transfer_time_seconds": 0.23950458299998445
+          }
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:43.105Z",
+        "size_mb": 50,
+        "mode": "TCP",
+        "status": 200,
+        "response": {
+          "application_rtt_ms": 0.07258299996237838,
+          "bytes_transferred": 52428800,
+          "host": "127.0.0.1",
+          "packet_loss_percent": null,
+          "port": 5001,
+          "protocol": "TCP",
+          "test_size_mb": 50,
+          "throughput_mbps": 37222.867703171796,
+          "transfer_time_seconds": 0.011268083999993905
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:43.497Z",
+        "size_mb": 50,
+        "mode": "UDP",
+        "status": 200,
+        "response": {
+          "application_rtt_ms": 0.1323749999642132,
+          "bytes_received": 48821600,
+          "bytes_sent": 52428800,
+          "host": "127.0.0.1",
+          "packet_loss_percent": 6.880135497013115,
+          "packets_lost": 3006,
+          "packets_received": 40685,
+          "packets_sent": 43691,
+          "port": 5002,
+          "protocol": "UDP",
+          "server": "127.0.0.1:5002",
+          "test_size_mb": 50,
+          "throughput_mbps": 1301.0085670420322,
+          "transfer_time_seconds": 0.30020770799995944
+        }
+      },
+      {
+        "timestamp": "2026-10-07T04:15:43.899Z",
+        "size_mb": 50,
+        "mode": "COMPARE",
+        "status": 200,
+        "response": {
+          "tcp": {
+            "application_rtt_ms": 0.10441699998864351,
+            "bytes_transferred": 52428800,
+            "host": "127.0.0.1",
+            "packet_loss_percent": null,
+            "port": 5001,
+            "protocol": "TCP",
+            "test_size_mb": 50,
+            "throughput_mbps": 43777.11735330089,
+            "transfer_time_seconds": 0.009581041999979334
+          },
+          "udp": {
+            "application_rtt_ms": 0.10354099998721722,
+            "bytes_received": 48609200,
+            "bytes_sent": 52428800,
+            "host": "127.0.0.1",
+            "packet_loss_percent": 7.285253255819277,
+            "packets_lost": 3183,
+            "packets_received": 40508,
+            "packets_sent": 43691,
+            "port": 5002,
+            "protocol": "UDP",
+            "server": "127.0.0.1:5002",
+            "test_size_mb": 50,
+            "throughput_mbps": 1310.128141117288,
+            "transfer_time_seconds": 0.29682104200003323
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "requests": [
+      "http://localhost:5173/api/health",
+      "http://localhost:5173/api/health",
+      "http://localhost:5173/api/test/tcp",
+      "http://localhost:5173/api/test/udp",
+      "http://localhost:5173/api/test/compare",
+      "http://localhost:5173/api/test/tcp",
+      "http://localhost:5173/api/test/udp",
+      "http://localhost:5173/api/test/compare",
+      "http://localhost:5173/api/test/tcp",
+      "http://localhost:5173/api/test/udp",
+      "http://localhost:5173/api/test/compare",
+      "http://localhost:5173/api/test/tcp",
+      "http://localhost:5173/api/test/udp",
+      "http://localhost:5173/api/test/compare",
+      "http://localhost:5173/api/test/tcp",
+      "http://localhost:5173/api/test/udp",
+      "http://localhost:5173/api/test/compare"
+    ]
+  },
+  "telemetry_before": [],
+  "telemetry_after_matrix": [
+    {
+      "metric": {
+        "protocol": "tcp",
+        "status": "success"
+      },
+      "value": [
+        1791346556.708,
+        "10"
+      ]
+    },
+    {
+      "metric": {
+        "protocol": "udp",
+        "status": "success"
+      },
+      "value": [
+        1791346556.708,
+        "10"
+      ]
+    }
+  ],
+  "matrix_telemetry_totals": {
+    "tcp": {
+      "bytes_sent": 190840832,
+      "bytes_received": 190840832,
+      "packets_sent": 0,
+      "packets_received": 0,
+      "packets_lost": 0
+    },
+    "udp": {
+      "bytes_sent": 190840832,
+      "bytes_received": 178412432,
+      "packets_sent": 159040,
+      "packets_received": 148683,
+      "packets_lost": 10357
+    }
+  },
+  "outages": {
+    "api-fail": {
+      "browser": "Chromium",
+      "origin": "http://localhost:5173",
+      "records": [
+        {
+          "timestamp": "2026-10-07T04:16:35.707Z",
+          "size_mb": 1,
+          "mode": "COMPARE",
+          "status": 403,
+          "response": "",
+          "error": "Network Test Failed\n\nThe API returned HTTP 403. Check that Flask is running and inspect the Vite proxy and Flask logs.\n\nStart the required TCP server on port 5001 and UDP server on port 5002 before retrying."
+        }
+      ],
+      "errors": [],
+      "requests": [
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/test/compare"
+      ]
+    },
+    "tcp-fail": {
+      "browser": "Chromium",
+      "origin": "http://localhost:5173",
+      "records": [
+        {
+          "timestamp": "2026-10-07T04:17:04.612Z",
+          "size_mb": 1,
+          "mode": "TCP",
+          "status": 503,
+          "response": {
+            "completed_protocols": [],
+            "details": "[Errno 61] Connection refused",
+            "error": "TCP test server is unavailable",
+            "failed_protocol": "TCP"
+          },
+          "error": "Network Test Failed\n\nTCP test server is unavailable. [Errno 61] Connection refused\n\nStart the required TCP server on port 5001 and UDP server on port 5002 before retrying."
+        }
+      ],
+      "errors": [],
+      "requests": [
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/test/tcp"
+      ]
+    },
+    "udp-fail": {
+      "browser": "Chromium",
+      "origin": "http://localhost:5173",
+      "records": [
+        {
+          "timestamp": "2026-10-07T04:17:22.802Z",
+          "size_mb": 1,
+          "mode": "UDP",
+          "status": 503,
+          "response": {
+            "completed_protocols": [],
+            "details": "[Errno 61] Connection refused",
+            "error": "UDP test server is unavailable",
+            "failed_protocol": "UDP"
+          },
+          "error": "Network Test Failed\n\nUDP test server is unavailable. [Errno 61] Connection refused\n\nStart the required TCP server on port 5001 and UDP server on port 5002 before retrying."
+        }
+      ],
+      "errors": [],
+      "requests": [
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/test/udp"
+      ]
+    },
+    "collector-outage": {
+      "browser": "Chromium",
+      "origin": "http://localhost:5173",
+      "records": [
+        {
+          "timestamp": "2026-10-07T04:17:37.646Z",
+          "size_mb": 1,
+          "mode": "COMPARE",
+          "status": 200,
+          "response": {
+            "tcp": {
+              "application_rtt_ms": 0.08850000000393266,
+              "bytes_transferred": 1048576,
+              "host": "127.0.0.1",
+              "packet_loss_percent": null,
+              "port": 5001,
+              "protocol": "TCP",
+              "test_size_mb": 1,
+              "throughput_mbps": 25957.501850787663,
+              "transfer_time_seconds": 0.00032316699997636533
+            },
+            "udp": {
+              "application_rtt_ms": 0.2673750000212749,
+              "bytes_received": 1048576,
+              "bytes_sent": 1048576,
+              "host": "127.0.0.1",
+              "packet_loss_percent": 0,
+              "packets_lost": 0,
+              "packets_received": 874,
+              "packets_sent": 874,
+              "port": 5002,
+              "protocol": "UDP",
+              "server": "127.0.0.1:5002",
+              "test_size_mb": 1,
+              "throughput_mbps": 48.62385650273865,
+              "transfer_time_seconds": 0.172520416999987
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "requests": [
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/test/compare"
+      ]
+    },
+    "prometheus-outage": {
+      "browser": "Chromium",
+      "origin": "http://localhost:5173",
+      "records": [
+        {
+          "timestamp": "2026-10-07T04:18:22.702Z",
+          "size_mb": 1,
+          "mode": "COMPARE",
+          "status": 200,
+          "response": {
+            "tcp": {
+              "application_rtt_ms": 0.09699999998247222,
+              "bytes_transferred": 1048576,
+              "host": "127.0.0.1",
+              "packet_loss_percent": null,
+              "port": 5001,
+              "protocol": "TCP",
+              "test_size_mb": 1,
+              "throughput_mbps": 14155.001899110344,
+              "transfer_time_seconds": 0.0005926249999674837
+            },
+            "udp": {
+              "application_rtt_ms": 0.1911670000254162,
+              "bytes_received": 1048576,
+              "bytes_sent": 1048576,
+              "host": "127.0.0.1",
+              "packet_loss_percent": 0,
+              "packets_lost": 0,
+              "packets_received": 874,
+              "packets_sent": 874,
+              "port": 5002,
+              "protocol": "UDP",
+              "server": "127.0.0.1:5002",
+              "test_size_mb": 1,
+              "throughput_mbps": 48.73942844891687,
+              "transfer_time_seconds": 0.17211133299997528
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "requests": [
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/test/compare"
+      ]
+    },
+    "grafana-outage": {
+      "browser": "Chromium",
+      "origin": "http://localhost:5173",
+      "records": [
+        {
+          "timestamp": "2026-10-07T04:18:54.107Z",
+          "size_mb": 1,
+          "mode": "COMPARE",
+          "status": 200,
+          "response": {
+            "tcp": {
+              "application_rtt_ms": 0.12241699994319788,
+              "bytes_transferred": 1048576,
+              "host": "127.0.0.1",
+              "packet_loss_percent": null,
+              "port": 5001,
+              "protocol": "TCP",
+              "test_size_mb": 1,
+              "throughput_mbps": 31992.06740022707,
+              "transfer_time_seconds": 0.0002622089999704258
+            },
+            "udp": {
+              "application_rtt_ms": 0.11675000007471681,
+              "bytes_received": 1048576,
+              "bytes_sent": 1048576,
+              "host": "127.0.0.1",
+              "packet_loss_percent": 0,
+              "packets_lost": 0,
+              "packets_received": 874,
+              "packets_sent": 874,
+              "port": 5002,
+              "protocol": "UDP",
+              "server": "127.0.0.1:5002",
+              "test_size_mb": 1,
+              "throughput_mbps": 48.72664116660495,
+              "transfer_time_seconds": 0.17215650000002825
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "requests": [
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/health",
+        "http://localhost:5173/api/test/compare"
+      ]
+    }
+  },
+  "recovery": {
+    "browser": "Chromium",
+    "origin": "http://localhost:5173",
+    "records": [
+      {
+        "timestamp": "2026-10-07T04:19:10.558Z",
+        "size_mb": 1,
+        "mode": "COMPARE",
+        "status": 200,
+        "response": {
+          "tcp": {
+            "application_rtt_ms": 0.10920900001565315,
+            "bytes_transferred": 1048576,
+            "host": "127.0.0.1",
+            "packet_loss_percent": null,
+            "port": 5001,
+            "protocol": "TCP",
+            "test_size_mb": 1,
+            "throughput_mbps": 29729.23126841597,
+            "transfer_time_seconds": 0.00028216700002303696
+          },
+          "udp": {
+            "application_rtt_ms": 0.1973329999600537,
+            "bytes_received": 1048576,
+            "bytes_sent": 1048576,
+            "host": "127.0.0.1",
+            "packet_loss_percent": 0,
+            "packets_lost": 0,
+            "packets_received": 874,
+            "packets_sent": 874,
+            "port": 5002,
+            "protocol": "UDP",
+            "server": "127.0.0.1:5002",
+            "test_size_mb": 1,
+            "throughput_mbps": 49.117919742424384,
+            "transfer_time_seconds": 0.17078508300005524
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "requests": [
+      "http://localhost:5173/api/health",
+      "http://localhost:5173/api/health",
+      "http://localhost:5173/api/test/compare"
+    ]
+  },
+  "fresh_start": {
+    "browser": "Chromium",
+    "origin": "http://localhost:5173",
+    "records": [
+      {
+        "timestamp": "2026-10-07T04:21:05.963Z",
+        "size_mb": 1,
+        "mode": "COMPARE",
+        "status": 200,
+        "response": {
+          "tcp": {
+            "application_rtt_ms": 0.09687499994015525,
+            "bytes_transferred": 1048576,
+            "host": "127.0.0.1",
+            "packet_loss_percent": null,
+            "port": 5001,
+            "protocol": "TCP",
+            "test_size_mb": 1,
+            "throughput_mbps": 14538.315424077302,
+            "transfer_time_seconds": 0.0005770000000211439
+          },
+          "udp": {
+            "application_rtt_ms": 0.18333299999540031,
+            "bytes_received": 1048576,
+            "bytes_sent": 1048576,
+            "host": "127.0.0.1",
+            "packet_loss_percent": 0,
+            "packets_lost": 0,
+            "packets_received": 874,
+            "packets_sent": 874,
+            "port": 5002,
+            "protocol": "UDP",
+            "server": "127.0.0.1:5002",
+            "test_size_mb": 1,
+            "throughput_mbps": 48.961294990977386,
+            "transfer_time_seconds": 0.17133141600004365
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "requests": [
+      "http://localhost:5173/api/health",
+      "http://localhost:5173/api/health",
+      "http://localhost:5173/api/test/compare"
+    ]
+  },
+  "fresh_start_counters": [
+    {
+      "metric": {
+        "protocol": "tcp",
+        "status": "success"
+      },
+      "value": [
+        1791346883.743,
+        "1"
+      ]
+    },
+    {
+      "metric": {
+        "protocol": "udp",
+        "status": "success"
+      },
+      "value": [
+        1791346883.743,
+        "1"
+      ]
+    },
+    {
+      "metric": {
+        "protocol": "tcp",
+        "status": "failure"
+      },
+      "value": [
+        1791346883.743,
+        "1"
+      ]
+    },
+    {
+      "metric": {
+        "protocol": "udp",
+        "status": "failure"
+      },
+      "value": [
+        1791346883.743,
+        "1"
+      ]
+    }
+  ],
+  "console_check": {
+    "browser": "Chromium",
+    "origin": "http://localhost:5173",
+    "records": [
+      {
+        "timestamp": "2026-10-07T04:21:42.212Z",
+        "size_mb": 1,
+        "mode": "COMPARE",
+        "status": 200,
+        "response": {
+          "tcp": {
+            "application_rtt_ms": 0.11945900007503951,
+            "bytes_transferred": 1048576,
+            "host": "127.0.0.1",
+            "packet_loss_percent": null,
+            "port": 5001,
+            "protocol": "TCP",
+            "test_size_mb": 1,
+            "throughput_mbps": 28228.693727143167,
+            "transfer_time_seconds": 0.000297165999995741
+          },
+          "udp": {
+            "application_rtt_ms": 0.18295799998213624,
+            "bytes_received": 1048576,
+            "bytes_sent": 1048576,
+            "host": "127.0.0.1",
+            "packet_loss_percent": 0,
+            "packets_lost": 0,
+            "packets_received": 874,
+            "packets_sent": 874,
+            "port": 5002,
+            "protocol": "UDP",
+            "server": "127.0.0.1:5002",
+            "test_size_mb": 1,
+            "throughput_mbps": 48.95575854706338,
+            "transfer_time_seconds": 0.17135079199999836
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "consoleErrors": [],
+    "requests": [
+      "http://localhost:5173/api/health",
+      "http://localhost:5173/api/health",
+      "http://localhost:5173/api/test/compare"
+    ]
+  },
+  "prometheus_history": {
+    "timestamp": 1791346567.268971,
+    "query": "netbench_network_tests_total{job=\"netbench\"}[1m]",
+    "result": [
+      {
+        "metric": {
+          "__name__": "netbench_network_tests_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp",
+          "status": "success"
+        },
+        "values": [
+          [
+            1791346550.282,
+            "10"
+          ],
+          [
+            1791346555.278,
+            "10"
+          ],
+          [
+            1791346560.283,
+            "10"
+          ],
+          [
+            1791346565.278,
+            "10"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_tests_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp",
+          "status": "success"
+        },
+        "values": [
+          [
+            1791346550.282,
+            "10"
+          ],
+          [
+            1791346555.278,
+            "10"
+          ],
+          [
+            1791346560.283,
+            "10"
+          ],
+          [
+            1791346565.278,
+            "10"
+          ]
+        ]
+      }
+    ]
+  },
+  "prometheus_history_verified": [
+    {
+      "metric": {
+        "__name__": "netbench_network_tests_total",
+        "exported_job": "netbench-api",
+        "instance": "otel-collector:8889",
+        "job": "netbench",
+        "otel_scope_name": "netbench.network",
+        "protocol": "tcp",
+        "status": "success"
+      },
+      "values": [
+        [
+          1791346550.282,
+          "10"
+        ],
+        [
+          1791346555.278,
+          "10"
+        ],
+        [
+          1791346560.283,
+          "10"
+        ],
+        [
+          1791346565.278,
+          "10"
+        ]
+      ]
+    },
+    {
+      "metric": {
+        "__name__": "netbench_network_tests_total",
+        "exported_job": "netbench-api",
+        "instance": "otel-collector:8889",
+        "job": "netbench",
+        "otel_scope_name": "netbench.network",
+        "protocol": "udp",
+        "status": "success"
+      },
+      "values": [
+        [
+          1791346550.282,
+          "10"
+        ],
+        [
+          1791346555.278,
+          "10"
+        ],
+        [
+          1791346560.283,
+          "10"
+        ],
+        [
+          1791346565.278,
+          "10"
+        ]
+      ]
+    }
+  ],
+  "grafana": {
+    "health": {
+      "database": "ok",
+      "version": "13.2.3",
+      "commit": "90ffed056f0884267356c12a0eeb72a022af53f1"
+    },
+    "datasource": {
+      "details": {
+        "application": "Prometheus",
+        "features": {
+          "rulerApiEnabled": false
+        }
+      },
+      "message": "Successfully queried the Prometheus API.",
+      "status": "OK"
+    },
+    "panels": [
+      {
+        "title": "Total Successful Tests",
+        "queries": 1,
+        "numeric_samples": 1
+      },
+      {
+        "title": "Successful Tests by Protocol",
+        "queries": 2,
+        "numeric_samples": 2
+      },
+      {
+        "title": "Average Throughput",
+        "queries": 2,
+        "numeric_samples": 2
+      },
+      {
+        "title": "Average Application RTT",
+        "queries": 2,
+        "numeric_samples": 2
+      },
+      {
+        "title": "Throughput over Time",
+        "queries": 2,
+        "numeric_samples": 8
+      },
+      {
+        "title": "Application RTT over Time",
+        "queries": 2,
+        "numeric_samples": 8
+      },
+      {
+        "title": "Average Transfer Duration",
+        "queries": 2,
+        "numeric_samples": 2
+      },
+      {
+        "title": "Payload Bytes Sent & Received",
+        "queries": 4,
+        "numeric_samples": 4
+      },
+      {
+        "title": "Average UDP Packet Loss",
+        "queries": 1,
+        "numeric_samples": 1
+      },
+      {
+        "title": "UDP DATA Packets",
+        "queries": 3,
+        "numeric_samples": 3
+      },
+      {
+        "title": "UDP Packet Loss over Time",
+        "queries": 1,
+        "numeric_samples": 4
+      },
+      {
+        "title": "Successful Test Activity over Time",
+        "queries": 2,
+        "numeric_samples": 22
+      }
+    ],
+    "browser": {
+      "panels": [
+        "Total Successful Tests",
+        "Successful Tests by Protocol",
+        "Average Throughput",
+        "Average Application RTT",
+        "Throughput over Time",
+        "Application RTT over Time",
+        "Average Transfer Duration",
+        "Payload Bytes Sent & Received",
+        "Average UDP Packet Loss",
+        "UDP DATA Packets",
+        "UDP Packet Loss over Time",
+        "Successful Test Activity over Time"
+      ],
+      "errors": []
+    }
+  },
+  "final_metrics": {
+    "tests_total": [
+      {
+        "metric": {
+          "__name__": "netbench_network_tests_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp",
+          "status": "success"
+        },
+        "value": [
+          1791346883.79,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_tests_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp",
+          "status": "success"
+        },
+        "value": [
+          1791346883.79,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_tests_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp",
+          "status": "failure"
+        },
+        "value": [
+          1791346883.79,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_tests_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp",
+          "status": "failure"
+        },
+        "value": [
+          1791346883.79,
+          "1"
+        ]
+      }
+    ],
+    "throughput_Mbit_per_second_count": [
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346883.791,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346883.791,
+          "1"
+        ]
+      }
+    ],
+    "transfer_duration_seconds_count": [
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346883.792,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346883.792,
+          "1"
+        ]
+      }
+    ],
+    "rtt_milliseconds_count": [
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346883.793,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346883.793,
+          "1"
+        ]
+      }
+    ],
+    "bytes_sent_total": [
+      {
+        "metric": {
+          "__name__": "netbench_network_bytes_sent_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346883.794,
+          "1048576"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_bytes_sent_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346883.794,
+          "1048576"
+        ]
+      }
+    ],
+    "bytes_received_total": [
+      {
+        "metric": {
+          "__name__": "netbench_network_bytes_received_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346883.794,
+          "1048576"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_bytes_received_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346883.794,
+          "1048576"
+        ]
+      }
+    ],
+    "packets_sent_total": [
+      {
+        "metric": {
+          "__name__": "netbench_network_packets_sent_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346883.795,
+          "874"
+        ]
+      }
+    ],
+    "packets_received_total": [
+      {
+        "metric": {
+          "__name__": "netbench_network_packets_received_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346883.796,
+          "874"
+        ]
+      }
+    ],
+    "packets_lost_total": [
+      {
+        "metric": {
+          "__name__": "netbench_network_packets_lost_total",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346883.797,
+          "0"
+        ]
+      }
+    ],
+    "packet_loss_percent_count": [
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346883.798,
+          "1"
+        ]
+      }
+    ]
+  },
+  "matrix_histogram_evidence": {
+    "netbench_network_throughput_Mbit_per_second_count{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      }
+    ],
+    "netbench_network_throughput_Mbit_per_second_sum{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_sum",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "363326.9266394581"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_sum",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "5553.368561061918"
+        ]
+      }
+    ],
+    "netbench_network_throughput_Mbit_per_second_bucket{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "0.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "25.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "50.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "75.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "100.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "250.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "750.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "1000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "2500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "7500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "+Inf",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "0.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "25.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "50.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "2"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "75.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "2"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "100.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "2"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "250.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "4"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "6"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "750.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "6"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "1000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "8"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "2500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "7500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_throughput_Mbit_per_second_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "+Inf",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      }
+    ],
+    "netbench_network_transfer_duration_seconds_count{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      }
+    ],
+    "netbench_network_transfer_duration_seconds_sum{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_sum",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0.038576706999890575"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_sum",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "2.203652581999961"
+        ]
+      }
+    ],
+    "netbench_network_transfer_duration_seconds_bucket{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "0.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "25.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "50.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "75.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "100.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "250.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "750.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "1000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "2500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "7500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "+Inf",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "0.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "25.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "50.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "75.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "100.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "250.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "750.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "1000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "2500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "7500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_transfer_duration_seconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "+Inf",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      }
+    ],
+    "netbench_network_rtt_milliseconds_count{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      }
+    ],
+    "netbench_network_rtt_milliseconds_sum{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_sum",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "1.0160820000351123"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_sum",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "1.9667899999262772"
+        ]
+      }
+    ],
+    "netbench_network_rtt_milliseconds_bucket{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "0.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "25.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "50.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "75.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "100.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "250.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "750.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "1000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "2500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "7500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "+Inf",
+          "otel_scope_name": "netbench.network",
+          "protocol": "tcp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "0.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "25.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "50.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "75.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "100.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "250.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "750.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "1000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "2500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "7500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_rtt_milliseconds_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "+Inf",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      }
+    ],
+    "netbench_network_packet_loss_percent_count{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_count",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      }
+    ],
+    "netbench_network_packet_loss_percent_sum{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_sum",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "44.08495743161464"
+        ]
+      }
+    ],
+    "netbench_network_packet_loss_percent_bucket{job=\"netbench\"}": [
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "0.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "4"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "4"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "25.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "50.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "75.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "100.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "250.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "750.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "1000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "2500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "5000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "7500.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "10000.0",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "netbench_network_packet_loss_percent_bucket",
+          "exported_job": "netbench-api",
+          "instance": "otel-collector:8889",
+          "job": "netbench",
+          "le": "+Inf",
+          "otel_scope_name": "netbench.network",
+          "protocol": "udp"
+        },
+        "value": [
+          1791346556.708,
+          "10"
+        ]
+      }
+    ]
+  }
+}
